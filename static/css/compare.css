@@ -1,0 +1,179 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+   :root {
+    --accent-color: #ec8ca4;
+    --heading-font-family: 'Poppins', sans-serif;
+    --body-font-family: 'Lato', sans-serif;
+  } 
+
+
+  body {
+    margin: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(212, 213, 221, 0.76);
+    font-family: var(--body-font-family);
+    display:table;
+  }
+  
+  .Collegeh-comparison .collegeh-name input{
+    border-radius: 10px;
+    font-size: 15px;
+    border-color: black;
+    padding: 5px 5px;
+  }
+  .searchh .search-icon{
+    font-size: 15px;
+    display: inline-block;
+    color: #2C3639;
+} 
+
+.searchh{
+    position: absolute;
+    padding: 5px 5px;
+    display: inline-block;
+    border-radius: 6px;
+   
+}
+
+  .Collegeh-comparison {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    /* width: 100%; */
+    margin: 1rem;
+    padding: 60px;
+  }
+  
+  .Collegeh-column {
+    background-color: white;
+    box-shadow: 0 7px 30px rgba(52, 31, 97, 0.1);
+    padding: 2rem;
+    flex-grow: 1;
+    flex-basis: 0;
+    max-width: 290px;
+    border-radius:8px;
+  }
+  
+  .Collegeh-column.popular{
+    position: relative;
+    background-color: var(--accent-color);
+    box-shadow: 0 7px 30px rgba(52, 13, 135, 0.3);
+    color: white;
+    margin-top: -1.5rem;
+    padding-top:3.5rem;
+    margin-bottom:-1.5rem;
+    padding-bottom:3.5rem;
+  }
+  
+  .Collegeh-column:first-child {
+    border-top-right-radius: 0; 
+    border-bottom-right-radius: 0; 
+  }
+  
+  .Collegeh-column:last-child {
+    border-top-left-radius: 0; 
+    border-bottom-left-radius: 0; 
+  }
+  
+  .Collegeh-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--heading-font-family);
+    font-weight: bold;
+  }
+  
+  .Collegeh {
+    font-size: 3.5rem;
+    display: flex;
+  }
+  
+  .collegeh-name {
+    font-size: 1.5rem;
+    margin-top: .5rem;
+    margin-right: .25rem;
+  }
+  
+  .per-month {
+    font-size: .75rem;
+    align-self: flex-end;
+    margin-bottom: 1.1rem;
+    text-transform: uppercase;
+  }
+  
+  .plan-name {
+    text-transform: uppercase;
+    font-size: .9rem;
+    margin-top: 1rem;
+    margin-bottom: 0;
+  }
+  
+  .dividerr{
+    height: 1px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .2);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .Collegeh-column.popular .dividerr {
+    background-color: rgba(255, 255, 255, .2);
+  }
+  
+  .featuree{
+    display: flex;
+    align-items: center;
+    margin: .5rem;
+  }
+  
+  .featuree img {
+    height: 1.1em;
+    width: 1.1em;
+    margin-right: .5rem;
+  }
+  
+  .featuree.inactive {
+    color: #999;
+    text-decoration-line: line-through;
+  }
+  
+  .most-popular {
+    position: absolute;
+    top: .5rem;
+    left: .5rem;
+    right: .5rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: var(--heading-font-family);
+  }
+  
+  .cta {
+    background-color: var(--accent-color);
+    color: white;
+    width: 100%;
+    border: none;
+    padding: .45rem 1rem;
+    cursor: pointer;
+    font-family: var(--heading-font-family);
+    font-weight: bold;
+    border-radius: 8px;
+    margin-top: 1rem;
+    transition: 100ms;
+    transform: scale(1);
+  }
+  
+  .Collegeh-column.popular .cta {
+    background-color: white;
+    color: var(--accent-color);
+  }
+  
+  .cta:hover, .cta:focus {
+    transform: scale(1.1);
+  }
